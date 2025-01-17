@@ -4,3 +4,10 @@ i=0
 while i<len(list):
     print(list[i])
     i+=1
+
+universities=["IBA sukkur","IBA karachi","SALU","Szabist","Aror uninvversity"]
+i=0
+while i<len(universities) :
+    print(universities[i])
+    i+=1
+    
