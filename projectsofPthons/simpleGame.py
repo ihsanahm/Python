@@ -69,7 +69,7 @@ def main():
                 if payout > 0:
                     print(f"You won ${payout}!")
                 else:
-                    print("Sorry, you lost this round. ☹️☹️☹️")
+                    print("Sorry, you lost this round. ☹️  ☹️  ☹️")
                 balance += payout
                 
                 pay_again=input("Do you want spain again? (Y/N) : ")
