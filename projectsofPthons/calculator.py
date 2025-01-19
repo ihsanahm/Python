@@ -2,14 +2,17 @@ from tkinter import Tk, Entry, Button, StringVar
 
 
 class Calculator:
+
     def __init__(self,master):
-        master.title("Calculator")
+
+        master.title(" Calculator ")
         master.geometry('350x410+0+0')
-        master.config(bg='#c5d2e6')
-        master.resizable(False,False)
+        master.config(bg = '#c5d2e6' )
+        master.resizable(False , False)
 
         self.equation=StringVar()
-        self.entery_value=''
+        self.entery_value=' '
+
         Entry(width=17,bg='white',font=('Arial Bold', 28),textvariable=self.equation).place(x=0,y=0)
 
         Button(width=11, height=4, text='(', compound='center', relief='flat', bg='#7588ff', command=lambda: self.show('(')).place(x=0, y=50)
@@ -40,19 +43,24 @@ class Calculator:
         
 
     def show(self,value):
+
         self.entery_value+=str(value)
         self.equation.set(self.entery_value)
 
     def clear(self):
-        self.entery_value=''
+
+        self.entery_value=' '
         self.equation.set(self.entery_value)
 
     def solve(self):
+
         result=eval(self.entery_value)
         self.equation.set(result)
 
 
 root=Tk()
+
 Calculator=Calculator(root)
+
 root.mainloop()
 
