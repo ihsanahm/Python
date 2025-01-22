@@ -1,7 +1,9 @@
 class Student:
+    str="Safer"
     # defualt constoctor
-    def __init__(this):
-       pass
+    def __init__(self):
+       self.str
+
     # peramiterized constactor
     def __init__(this, fullName):
         print("Adding a student in database ")
@@ -9,3 +11,5 @@ class Student:
 
 s1=Student("Ihsan")
 print(s1.name)
+s2=Student()
+print(s2.str)
