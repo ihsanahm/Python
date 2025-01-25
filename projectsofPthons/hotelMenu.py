@@ -20,6 +20,7 @@ while is_true:
     item=input("Enter the name of the item you want to order :")
     if item in menu:
         total +=menu[item]
+        print("Item added..")
     else:
         print(" This item is not available")
     item1=input("Do you want more item (Y/N) : ")
