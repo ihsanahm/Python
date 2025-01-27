@@ -54,4 +54,19 @@ class IntrestRewardsAcct(BankAccount):
         self.get_belance()
 
 
+class SavingAcct(IntrestRewardsAcct):
+    def __init__(self, initialAccount, accName):
+        super().__init__(initialAccount, accName)
+        self.fee=10
+    def withdraw(self , amount):
+        try:
+            self.VariableTransication(amount + self.fee)
+            self.belance = self.belance - (amount+self.fee)
+            print("Withdraw is completed. ✅")
+            self.get_belance()
+        except BelanceException as error:
+            print(f"\nWithdraw is intrrupted: {error}.")
+    
+
+
 
