@@ -38,7 +38,7 @@ class BankAccount:
     
     def transfer(self , amount,account):
         try:
-            print("\n***************\n\nAmount is transfering... 🔃")
+            print("\n***************\n\nAmount is transfering... 🔃\n\n")
             self.VariableTransication(amount)
             self.withdraw(amount)
             account.Deposit(amount)
@@ -47,6 +47,11 @@ class BankAccount:
             print(f"\nTransfer is intrrupted!❌.{error}")
             
 
+class IntrestRewardsAcct(BankAccount):
+    def Deposit(self, amount):
+        self.belance=self.belance+(amount*1.05)
+        print("\n Deposit completed.✅")
+        self.get_belance()
 
 
 
