@@ -50,7 +50,6 @@ myIcon = Button(
     image=search_Icon, borderwidth=0, cursor="hand2", bg="#404040", command=getWeather
 )
 myIcon.place(x=400, y=31.5)
-
 Logo_image = PhotoImage(file=r"D:/Python repository/projectsofPthons/logo.png")
 myLogo = Label(image=Logo_image)
 myLogo.place(x=180, y=130)
@@ -58,7 +57,6 @@ myLogo.place(x=180, y=130)
 Button_image = PhotoImage(file=r"D:/Python repository/projectsofPthons/NewBox.png")
 myButton = Label(image=Button_image)
 myButton.pack(padx=5, pady=5, side=BOTTOM)
-
 # Adding labels
 Label(root, text="WIN", font=("Helvetica", 15, "bold"), bg="#1ab5ef", fg="white").place(x=120, y=460)
 Label(root, text="HUMINTY", font=("Helvetica", 15, "bold"), bg="#1ab5ef", fg="white").place(x=250, y=460)
