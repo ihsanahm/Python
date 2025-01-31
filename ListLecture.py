@@ -1,7 +1,7 @@
 # marks=[12,33,55,98.5,223.55,33]
 # students=['ihsan','farman','ali','ahmed',44,77,]
 
-# print("list :",marks)
+# print("list :",marks)  
 # print("Students : ",students)
 
 # # print(marks[0],marks[4])
